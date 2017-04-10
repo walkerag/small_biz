@@ -2,7 +2,7 @@
 
 An analysis of small business influence using US census bureau business panel data and results from the 2016 election
 
-Blog post: arandomwalker.com/2017/4/8/smallbizanalysis
+Blog post: https://www.arandomwalker.com/blog/2017/4/8/tweetveep
 
 ## Data Sources
 
