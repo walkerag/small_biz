@@ -20,6 +20,8 @@ library(DT)
 library(pander)
 library(ggrepel)
 library(extrafont)
+library(sf)
+library(scales)
 
 #Load election data
 elections<-read.csv("/Users/walkerag/Documents/small_biz/US_County_Level_Presidential_Results_08-16.csv"

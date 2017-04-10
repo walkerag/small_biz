@@ -19,6 +19,9 @@ library(formattable)
 library(DT)
 library(pander)
 library(ggrepel)
+library(extrafont)
+library(sf)
+library(scales)
 
 #######################
 #ELECTION DATA MAPS
@@ -29,7 +32,7 @@ elections<-read.csv("/Users/walkerag/Documents/small_biz/US_County_Level_Preside
                     ,stringsAsFactors = FALSE)
 
 #Read in area shape file:
-area <- readShapePoly("/Users/walkerag/Documents/small_biz/cb_2016_us_county_500k.shp")
+area <- readShapePoly("/Users/walkerag/Documents/small_biz/shape_files/cb_2016_us_county_500k.shp")
 
 #Create percentage variables
 elections$dem_2008_perc<-elections$dem_2008/elections$total_2008

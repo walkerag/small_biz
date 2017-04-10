@@ -19,6 +19,9 @@ library(formattable)
 library(DT)
 library(pander)
 library(ggrepel)
+library(extrafont)
+library(sf)
+library(scales)
 
 #Codes from census metadata
 #a	0 to 19 employees
@@ -38,7 +41,7 @@ library(ggrepel)
 #S	Withheld because estimate did not meet publication standards
 
 #Census business panel data: country level
-dat<-read.csv("/Users/walkerag/small_biz/BP_2014_00A2_with_ann.csv",stringsAsFactors = FALSE)
+dat<-read.csv("/Users/walkerag/Documents/small_biz/BP_2014_00A2_with_ann.csv",stringsAsFactors = FALSE)
 
 #First record contains descriptions, remove
 dat<-dat[-1,]
